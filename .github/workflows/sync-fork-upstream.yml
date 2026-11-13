@@ -15,6 +15,7 @@ jobs:
   update:
     name: Merge safe upstream updates
     permissions:
+# This job requires contents: write to push merged upstream code onto the fork.
       contents: write # Required to push upstream code changes to this fork
     runs-on: ubuntu-latest
     timeout-minutes: 45
