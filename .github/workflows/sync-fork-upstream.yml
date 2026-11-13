@@ -13,8 +13,9 @@ concurrency:
 
 jobs:
   update:
+    name: Merge safe upstream updates
     permissions:
-      contents: write
+      contents: write # Required to push upstream code changes to this fork
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:
